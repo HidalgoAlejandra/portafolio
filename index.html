@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandra Hidalgo">
+    <!-- Icono pestaña -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/viajes.svg">
+    <!-- Libreria Iconos -->
+    <script src="https://kit.fontawesome.com/ddeffa9bf4.js" crossorigin="anonymous"></script>
+    <!-- Letra Oxygen Regular 400-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <!-- CDN bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Css local -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portafolio</title>
+</head>
+<body id="viajes">
+<!-- NAV Barra de navegación fija en la parte superior de la pantalla (fixed-top) y transparente, con el logo y links a
+diferentes secciones de la página, haciendo un smooth scroll de 1000 -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="30px">
+          <image href="assets/img/viajes.svg" width="30px" height="30px" />
+        </svg>Viajes Chile
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#somos">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destacados">Destacados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- CARRUSEL Un carousel que muestra las imágenes del sitio, ubicado al borde superior de la pagina-->
+  <div class="top-content">
+    <div class="container-fluid p-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active">
+                <img src="assets/img/carousel1.jpg" class="img-fluid "  alt="Atacama" width="100%">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/carousel2.jpg" class="img-fluid "  alt="Isla de Pascua" width="100%">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/carousel3.jpg" class="img-fluid "  alt="Punta Arenas" width="100%">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+  </div>
+  <!-- HEADER Una sección de presentación, utilizando favicons y 3 párrafos (que desaparecen en
+tamaños pequeños de pantalla). Al hacer doble click sobre parrafos se ponen rojos -->
+  <header id="somos" class="container text-white pt-5 pb-2 d-none d-sm-none d-lg-blog d-xl-block">
+    <div class="row" >
+      <h1 class="text-center pb-3 border-bottom">¿QUIÉNES SOMOS?</h1>
+        <div class="col-12 col-md-4 pb-2 pt-2">
+          <h3 class="icono text-center"><i class="fa-solid fa-plane"></i></h3>
+          <p class="quien ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="col-12 col-md-4 pb-2 pt-2">
+          <p class="quien ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <h3 class="icono text-center"><i class="fa-solid fa-mountain"></i></h3>
+        </div>
+        <div class="col-12 col-md-4 pb-2 pt-2">
+          <h3 class="icono text-center"><i class="fa-solid fa-route"></i></h3>
+          <p class="quien ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+  </header>
+  <!-- CARD Sección de destacados, que muestre 4 cards (tarjetas) con la imagen e
+información asociada. Al hacer click en titulo desaparece y aparece descripcion de las tarjetas-->
+  <main id="destacados" class="container text-white pt-5 pb-2">
+    <div class="row" >
+      <h1 class="text-center pb-3 border-bottom">DESTACADOS</h1>
+        <div class="col-12 col-md-3 pb-2 pt-2">
+            <div class="card m-auto">
+                <img src="assets/img/card1.jpg" class="card-img-top" alt="Glaciares">
+                <div class="card-body">
+                    <h5 class="card-title">GLACIARES</h5>
+                    <p class="card-text mb-0"><small>Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 pb-2 pt-2">
+            <div class="card m-auto" >
+                <img src="assets/img/card2.jpg" class="card-img-top" alt="Lagos">
+                <div class="card-body">
+                    <h5 class="card-title">LAGOS</h5>
+                    <p class="card-text mb-0"><small>Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 pb-2 pt-2">
+            <div class="card m-auto" >
+                <img src="assets/img/card3.jpg" class="card-img-top" alt="Salares">
+                <div class="card-body">
+                    <h5 class="card-title">SALARES</h5>
+                    <p class="card-text mb-0"><small>Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 pb-2 pt-2">
+            <div class="card m-auto" >
+                <img src="assets/img/card4.jpg" class="card-img-top" alt="Cordillera">
+                <div class="card-body">
+                    <h5 class="card-title">CORDILLERA</h5>
+                    <p class="card-text mb-0"><small>Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+  <!-- Formulario de contacto. Al pasar sobre boton al lado derecho aparece un tooltip con un mensaje, 
+    al hacer click manda mensaje de alerta  -->
+  <section id="contacto" class="container text-white pt-5 pb-5">
+    <h1 class="text-center pb-3 border-bottom">CONTACTO</h1>
+    <form class="pt-2">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="asunto" class="form-label">Asunto</label>
+        <input type="text" class="form-control" id="asunto">
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+      </div>
+      <button id="enviarcontacto" 
+      type="submit" 
+      class="btn text-white" 
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-custom-class="custom-tooltip"
+      data-bs-title="Presiona para enviar Contacto">Enviar</button>
+    </form>
+  </section>
+  <!-- Sección footer con links a las redes sociales -->
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-6 text-center my-3 d-flex align-items-center justify-content-center">
+                <p class="fs-3 text-white align-middle m-0">VIAJES CHILE</p>
+            </div>
+            <div class="col-md-5 col-6 d-flex align-items-center gap-2 justify-content-end">
+              <p class="fs-3 text-white align-middle m-0">
+                <a href="https://github.com/" target="_blank" class="link-light"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="link-light"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="link-light"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" class="link-light"><i class="fa-brands fa-square-facebook"></i></a></p>
+            </div>
+        </div>
+    </div>
+  </footer>
+	<!-- Js y popper de bootstrap -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<!-- Jquery -->
+	<script
+		src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"></script>
+    <!-- Js local     -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

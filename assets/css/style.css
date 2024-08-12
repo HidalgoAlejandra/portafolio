@@ -1,0 +1,32 @@
+body{
+    font-family: 'Oxygen', sans-serif;
+}
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2.3rem;
+}
+#viajes, #destacados, #contacto {
+    background: #000000 0% 0% no-repeat padding-box;
+}
+#enviarcontacto, .icono, .card-body, footer {
+    background: rgb(13, 202, 240) ;
+}
+.tooltip-main {
+    background: yellow;
+    color: darkred;
+  }
+  .tooltip-qm {
+    float: left;
+    margin: -2px 0px 3px 4px;
+    font-size: 12px;
+  }
+  .tooltip-inner {
+    background: yellow;
+    color: darkred;
+  }
+  .tooltip.show {
+    opacity: 1;
+  }
+  .tooltip-arrow{
+    background: yellow;
+  }
